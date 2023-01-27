@@ -5,6 +5,7 @@ void manual();
 
 int main()
 {
+  //Variables de Matriz
   int opc, res;
   polinomios *pol;
   mat *matriz;
@@ -18,14 +19,14 @@ int main()
 
   do
   {
-    menu();
+    menu();//Estas son las funciones para poder mostrar el menu para elegir la Operacion
     fflush(stdin);
     scanf("%d", &opc);
-    system("cls");
+    system("cls");//Limpiar la panatalla
 
-    switch (opc)
+    switch (opc)//En el menu se muestra
     {
-      while (total_polinomios <= 0 && opc != 1 && opc != 2 && opc != 8)
+      while (total_polinomios <= 0 && opc != 1 && opc != 2 && opc != 8)//Funciones 
       {
       case 1:
         pol = crear_polinomio();
